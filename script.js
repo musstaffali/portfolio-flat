@@ -8,25 +8,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         if (target) {
             window.scrollTo({
-                top: target.offsetTop,
+                top: target.offsetTop - document.querySelector('header').offsetHeight,
                 behavior: 'smooth'
             });
         }
     });
-});
-
-// Add a simple animation to the hero section
-const hero = document.getElementById('hero');
-hero.style.opacity = '0';
-
-window.addEventListener('load', () => {
-    let opacity = 0;
-    const animationInterval = setInterval(() => {
-        if (opacity < 1) {
-            opacity += 0.02;
-            hero.style.opacity = opacity;
-        } else {
-            clearInterval(animationInterval);
-        }
-    }, 10);
 });
