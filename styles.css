@@ -7,13 +7,13 @@
 
 /* Style the body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'YourCustomFont', Arial, sans-serif; /* Custom font */
+    background-color: #f0f0f0;
 }
 
 /* Style the header and navigation */
 header {
-    background-color: #007BFF;
+    background-color: #333;
     color: #fff;
     padding: 1rem 0;
 }
@@ -37,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #0056b3;
+    color: #007BFF;
 }
 
 /* Style the hero section */
@@ -78,24 +78,13 @@ section h2 {
 
 .project img {
     max-width: 100%;
+    cursor: pointer;
 }
 
 /* Style the footer */
 footer {
     text-align: center;
-    background-color: #007BFF;
+    background-color: #333;
     color: #fff;
     padding: 1rem 0;
-}
-
-/* Media query for responsive design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav li {
-        margin: 1rem 0;
-    }
 }
