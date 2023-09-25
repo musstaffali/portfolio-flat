@@ -15,7 +15,9 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
 nav ul {
@@ -45,27 +47,39 @@ nav a:hover {
     text-align: center;
     padding: 3rem 0;
     background-color: #ffcc00;
+    background-image: url('images/hero-bg.jpg'); /* Background image for hero */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.hero-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for content */
+    border-radius: 10px;
+    padding: 2rem;
 }
 
 #hero h1 {
     font-size: 3rem;
-    color: #333;
 }
 
 #hero p {
     font-size: 1.5rem;
-    color: #333;
 }
 
 /* Style the other sections */
-section {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 2rem;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for sections */
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
-section h2 {
+.container h2 {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 1rem;
